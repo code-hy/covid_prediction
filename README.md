@@ -45,13 +45,34 @@ python train.py
 python predict.py
 ```
 
+Visit: http://localhost:8000/docs
+
+
 ### Option 2:Docker
 ``` bash
 docker build -t covid-api .
 docker run -p 8000:8000 covid-api
 ```
 
+### Option 3: Cloud (Render - free site for small projects)
+See deployment below:
 
 
+🔍 Notebook
+Explore notebook.ipynb for:
 
-``` 
+- Data cleaning
+- EDA (distributions, missing values, time trends)
+- Feature importance (SHAP/XGBoost)
+- Model comparison & hyperparameter tuning
+
+🚀 Deployment
+Deployed live on Render (free tier):
+👉 https://covid-forecast-api.onrender.com
+
+Test it:
+``` bash
+curl -X POST "https://covid-forecast-api.onrender.com/predict" \
+  -H "Content-Type: application/json" \
+  -d '{"country": "Australia", "date": "2024-07-15"}'
+```
