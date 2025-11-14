@@ -76,3 +76,5 @@ curl -X POST "https://covid-forecast-api.onrender.com/predict" \
   -H "Content-Type: application/json" \
   -d '{"country": "Australia", "date": "2024-07-15"}'
 ```
+🧰 Dependencies
+requirements.txt lists all Python packages
