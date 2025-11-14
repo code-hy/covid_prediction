@@ -24,9 +24,11 @@ We use the [Our World in Data (OWID) COVID-19 dataset](https://github.com/owid/c
 To download manually:
 ```bash
 curl -L "https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/owid-covid-data.csv" -o data/owid-covid-data.csv
+```
+---
 
-# 🧪 How to Run
-## Option 1: Local(with virtual environment on Windows)
+## 🧪 How to Run
+### Option 1: Local(with virtual environment on Windows)
 
 ``` bash
 # Create and activate environment
@@ -41,8 +43,9 @@ python train.py
 
 # Run API
 python predict.py
+```
 
-## Option 2:Docker
+### Option 2:Docker
 ``` bash
 docker build -t covid-api .
 docker run -p 8000:8000 covid-api
